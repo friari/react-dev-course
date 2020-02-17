@@ -83,21 +83,6 @@ const Action = (props) => {
     );
 };
 
-// class Action extends React.Component {
-//     render() {
-//         return (
-//             <div>
-//                 <button
-//                     onClick={ this.props.handlePick }
-//                     disabled={ !this.props.hasOptions }
-//                 >
-//                     What should I do?
-//                 </button>
-//             </div>
-//         );
-//     }
-// };
-
 const Options = (props) => {
     return (
         <div>
@@ -109,24 +94,6 @@ const Options = (props) => {
     );
 };
 
-// class Options extends React.Component {
-//     // handleRemoveAll() {
-//     //     console.log(this.props.options);
-//     //     // alert('some message');
-//     // }
-
-//     render() {
-//         return (
-//             <div>
-//                 <button onClick={ this.props.handleDeleteOptions }>Remove All</button>
-//                 {
-//                     this.props.options.map((option) => <Option key={ option } optionText={ option } />)
-//                 }
-//             </div>
-//         );
-//     }
-// }
-
 const Option = (props) => {
     return (
         <div>
@@ -136,18 +103,6 @@ const Option = (props) => {
         </div>
     );
 };
-
-// class Option extends React.Component {
-//     render() {
-//         return (
-//             <div>
-//                 {
-//                     this.props.optionText
-//                 }
-//             </div>
-//         );
-//     }
-// }
 
 class AddOption extends React.Component {
     constructor(props) {

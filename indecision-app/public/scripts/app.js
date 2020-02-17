@@ -132,21 +132,6 @@ var Action = function Action(props) {
     );
 };
 
-// class Action extends React.Component {
-//     render() {
-//         return (
-//             <div>
-//                 <button
-//                     onClick={ this.props.handlePick }
-//                     disabled={ !this.props.hasOptions }
-//                 >
-//                     What should I do?
-//                 </button>
-//             </div>
-//         );
-//     }
-// };
-
 var Options = function Options(props) {
     return React.createElement(
         'div',
@@ -162,24 +147,6 @@ var Options = function Options(props) {
     );
 };
 
-// class Options extends React.Component {
-//     // handleRemoveAll() {
-//     //     console.log(this.props.options);
-//     //     // alert('some message');
-//     // }
-
-//     render() {
-//         return (
-//             <div>
-//                 <button onClick={ this.props.handleDeleteOptions }>Remove All</button>
-//                 {
-//                     this.props.options.map((option) => <Option key={ option } optionText={ option } />)
-//                 }
-//             </div>
-//         );
-//     }
-// }
-
 var Option = function Option(props) {
     return React.createElement(
         'div',
@@ -187,18 +154,6 @@ var Option = function Option(props) {
         props.optionText
     );
 };
-
-// class Option extends React.Component {
-//     render() {
-//         return (
-//             <div>
-//                 {
-//                     this.props.optionText
-//                 }
-//             </div>
-//         );
-//     }
-// }
 
 var AddOption = function (_React$Component3) {
     _inherits(AddOption, _React$Component3);
